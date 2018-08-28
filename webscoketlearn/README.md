@@ -4,6 +4,8 @@ https://github.com/socketio/socket.io-client-cpp
 
 依赖库:
 
+boost
+
 websocketpp
 
 rapidjson

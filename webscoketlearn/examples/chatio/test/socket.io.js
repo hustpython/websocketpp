@@ -18,7 +18,7 @@ function client(srv, nsp, opts){
   var addr = srv.address();
   if (!addr) addr = srv.listen().address();
   //localhost
-  var url = 'ws://192.168.191.4:' + addr.port + (nsp || '');
+  var url = 'ws://localhost:' + addr.port + (nsp || '');
   return ioc(url, opts);
 }
 

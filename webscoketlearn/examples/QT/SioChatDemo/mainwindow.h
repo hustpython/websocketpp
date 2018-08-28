@@ -6,7 +6,7 @@
 #include <QPushButton>
 #include <QPlainTextEdit>
 #include <QTimer>
-#include <sio_client.h>
+#include <sioclient/src/sio_client.h>
 #include "nicknamedialog.h"
 namespace Ui {
 class MainWindow;

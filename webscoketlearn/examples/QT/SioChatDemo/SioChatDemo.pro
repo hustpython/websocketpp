@@ -16,10 +16,14 @@ CONFIG+=c++11
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    nicknamedialog.cpp
+    nicknamedialog.cpp \
+    ./sioclient/src/sio_client.cpp \
+    ./sioclient/src/internal/sio_packet.cpp
 
 HEADERS  += mainwindow.h \
-    nicknamedialog.h
+    nicknamedialog.h \
+    ./sioclient/src/sio_client.h \
+    ./sioclient/src/sio_message.h
 
 FORMS    += mainwindow.ui \
     nicknamedialog.ui
@@ -29,6 +33,12 @@ CONFIG(debug, debug|release):DEFINES +=DEBUG=1
 
 INCLUDEPATH += $$PWD/../../../build/include
 DEPENDPATH += $$PWD/../../../build/lib
+
+INCLUDEPATH += $$PWD/sioclient/lib/rapidjson
+INCLUDEPATH += $$PWD/sioclient/lib/websocketpp
+INCLUDEPATH += $$PWD/sioclient/lib/boost
+
+#LIBS += $$PWD/sioclient/lib/boost -lboost
 
 CONFIG(release, debug|release): LIBS += -L$$PWD/../../../build/lib/Release/ -lsioclient
 else:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../build/lib/Debug/ -lsioclient

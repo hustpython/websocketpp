@@ -31,7 +31,7 @@ add_library(sioclient ${ALL_SRC})
 target_include_directories(sioclient PRIVATE ${Boost_INCLUDE_DIRS} 
     ${CMAKE_CURRENT_LIST_DIR}/src 
     ${CMAKE_CURRENT_LIST_DIR}/lib/websocketpp 
-    ${CMAKE_CURRENT_LIST_DIR}/lib/rapidjson/include
+    ${CMAKE_CURRENT_LIST_DIR}/lib/rapidjson
 )
 
 set_property(TARGET sioclient PROPERTY CXX_STANDARD 11)
@@ -52,7 +52,7 @@ add_library(sioclient_tls ${ALL_SRC})
 target_include_directories(sioclient_tls PRIVATE ${Boost_INCLUDE_DIRS} 
     ${CMAKE_CURRENT_LIST_DIR}/src 
     ${CMAKE_CURRENT_LIST_DIR}/lib/websocketpp 
-    ${CMAKE_CURRENT_LIST_DIR}/lib/rapidjson/include
+    ${CMAKE_CURRENT_LIST_DIR}/lib/rapidjson
     ${OPENSSL_INCLUDE_DIR}
 )
 
