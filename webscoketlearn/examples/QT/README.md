@@ -36,3 +36,18 @@ qtcreater 中 编译 Qt
 选择 Release模式
 
 运行 QtDemo
+
+附:
+QtCreater 无法输入中文问题
+```
+将 libfcitxplatforminputcontextplugin.so 拷贝到以下目录中，可能有一些不需要，为保险起见可以都复制，如果还不行选择较最新版本的libfcitxplatforminputcontextplugin.so
+
+
+/home/mxq/Qt5.10.1/5.10.1/gcc_64/plugins/platforminputcontexts
+
+/home/mxq/Qt5.10.1/Tools/QtCreator/lib/Qt/plugins/platforminputcontexts
+
+/home/mxq/Qt5.10.1/Tools/QtCreator/lib/qtcreator/plugins
+
+/home/mxq/Qt5.10.1/Tools/QtCreator/lib/qtcreator/plugins/platforminputcontexts
+```

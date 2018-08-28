@@ -3,7 +3,7 @@
 # Project created by QtCreator 2015-03-30T19:25:23
 #
 #-------------------------------------------------
-
+# 迟到的中文啊
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
